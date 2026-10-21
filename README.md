@@ -23,3 +23,5 @@ The admin supports product and purchase CRUD through the Apps Script actions. Pu
 ## Production
 
 Run `npm run build`, then `npm start`.
+
+For production, set ADMIN_PASSWORD in your hosting provider's server-side environment variables and redeploy. .env.local is only for local development; .env.example contains placeholders.
