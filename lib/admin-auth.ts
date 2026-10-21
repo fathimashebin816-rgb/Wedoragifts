@@ -1,0 +1,2 @@
+import {cookies} from 'next/headers';import {createHmac,timingSafeEqual} from 'node:crypto';
+export async function isAdmin(){const key=process.env.ADMIN_PASSWORD;if(!key)return false;const actual=(await cookies()).get('wedora_admin')?.value||'';const expected=createHmac('sha256',key).update('wedora-admin-session').digest('hex');const a=Buffer.from(actual),b=Buffer.from(expected);return a.length===b.length&&timingSafeEqual(a,b)}

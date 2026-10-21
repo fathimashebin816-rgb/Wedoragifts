@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fdf9f3;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#775a19", "on-tertiary-container": "#493900", "inverse-surface": "#31302d", "surface-variant": "#e6e2dc", "surface-tint": "#775a19", "on-tertiary": "#ffffff", "on-secondary-container": "#755d56", "on-surface-variant": "#4e4639", "primary-fixed": "#ffdea5", "on-surface": "#1c1c18", "surface": "#fdf9f3", "on-primary-container": "#4e3700", "tertiary-fixed-dim": "#e9c349", "surface-container": "#f1ede7", "on-primary": "#ffffff", "on-primary-fixed": "#261900", "on-error": "#ffffff", "secondary-fixed": "#fcdcd3", "secondary": "#715952", "background": "#fdf9f3", "on-secondary-fixed-variant": "#57423b", "inverse-on-surface": "#f4f0ea", "inverse-primary": "#e9c176", "surface-bright": "#fdf9f3", "on-secondary-fixed": "#281712", "on-background": "#1c1c18", "secondary-fixed-dim": "#dfc0b7", "outline-variant": "#d1c5b4", "outline": "#7f7667", "error-container": "#ffdad6", "surface-container-highest": "#e6e2dc", "on-secondary": "#ffffff", "primary-fixed-dim": "#e9c176", "surface-dim": "#dddad4", "tertiary": "#735c00", "primary-container": "#c5a059", "on-error-container": "#93000a", "on-primary-fixed-variant": "#5d4201", "surface-container-low": "#f7f3ed", "error": "#ba1a1a", "secondary-container": "#f9d9d0", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffe088", "surface-container-high": "#ebe8e2", "on-tertiary-fixed-variant": "#574500", "tertiary-container": "#c5a129", "on-tertiary-fixed": "#241a00" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "2rem", "gutter": "1.5rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.005em", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(119,90,25,0.08)] pt-safe"><div class="bg-secondary-container text-on-secondary-container px-gutter-mobile py-space-xs text-center flex items-center justify-center"><p class="font-label-sm text-label-sm tracking-wider uppercase font-semibold truncate">Complimentary Pan-India Luxury Shipping on Orders Above ₹4,999 ✨</p></div><div class="h-20 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Wedora Gifts Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0AHr5S8G4FPxQnN109bldA8xsSlmYWQBHZWbJGjnkHzOfzD5bnQKQh9HBFmt1m7B3EXiPQ-7s5KnqvhAWhOzq8qIiTLXAsppXWqWB7i-7iXN34w0BMMOryuJgCpSeAJs0MEqPSeNYmRinGt5ThXKI5M-XEk3HwyLHbolDKx7NwdDr0Wm5_zZ5H-C25cgkyVTHiwg9qKFbNokP15MI83pawKWdd74b4pawzQsufEPs4lX28NOd2SvVnw"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">Wedora Gifts</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase text-[9px] truncate">Catalog</span></div></div><div class="flex items-center gap-1 flex-shrink-0"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Wishlist" class="relative w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2 right-2 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-[10px] leading-none">2</span></button><button aria-label="Bag" class="relative w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px] leading-none font-bold">3</span></button><a aria-label="Profile" class="w-11 h-11 flex items-center justify-center pl-1" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_rgba(119,90,25,0.2)] ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvSlyZeqv8E3aPqZyxOUEL-_f1pTWR4SjtsLTJxSZDOhOc7NrN1nJAqCJ_mLxYvI92-W9MxcuatAjpDjF40ughrnc7POA6iiyckzTJY5NtKgA4KM8hyWdDdDY-fXlGPU2EPcWJwV8ARMZWg1_hmSYt3Ro5E0-bNw1lFqulfiTDKjaDnwa0fmxRctMm-QhR2w8OdoqnbOXc1Yb64qdN7-8JRdpGTeJollvGjU6kPVXl90ipelQEb5YsXA"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Editorial Page Intro -->
+<section class="px-gutter-mobile pt-space-xs pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+        Bespoke Matrimonial Editions
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">
+        48 Hampers
+      </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">The Wedding Gift Collection</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+      Handcrafted heirlooms, gilded confections, and scented indulgences sealed with timeless wax insignia for wedding couples &amp; guests.
+    </p>
+</section>
+<!-- Horizontal Scrolling Category Chips -->
+<div class="w-full overflow-x-auto no-scrollbar py-space-xs px-gutter-mobile flex items-center gap-space-xs">
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all shadow-sm bg-secondary-container text-on-secondary-container font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+      All Hampers
+    </button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary">
+      Bridal Glow
+    </button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary">
+      Bridesmaid Trousseau
+    </button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary">
+      Groom Luxe
+    </button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary">
+      Engagement
+    </button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary">
+      Return Favors
+    </button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary">
+      Artisan Chocolates
+    </button>
+</div>
+<!-- Interactive Filter & Sort Sub-bar -->
+<div class="px-gutter-mobile py-space-xs">
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between gap-space-xs shadow-sm">
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+<!-- Filter sheet toggle button -->
+<button class="flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1.5 rounded-lg text-on-surface font-label-md text-label-md shadow-xs active:scale-95 transition-transform" id="openFilterModal">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Filters</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary ml-0.5"></span>
+</button>
+<!-- Quick filter tag buttons -->
+<button class="flex items-center gap-1 bg-surface-container px-2 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">
+<span>₹2.5k - ₹25k</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container px-2 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">
+<span>Occasion</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+<!-- Sort dropdown selector -->
+<div class="relative flex-shrink-0">
+<label class="sr-only" for="sortSelect">Sort by</label>
+<div class="flex items-center gap-1 text-on-surface-variant bg-surface-container-lowest px-2.5 py-1.5 rounded-lg shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">sort</span>
+<select class="bg-transparent font-label-sm text-label-sm text-on-surface focus:outline-none cursor-pointer pr-1" id="sortSelect">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Top Rated (4.8+)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Grid: 2 Columns on Mobile -->
+<section class="px-gutter-mobile py-space-sm grid grid-cols-2 gap-space-xs">
+<!-- Product 1: The Sovereign Ivory Velvet Trunk -->
+<article class="bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An opulent handcrafted ivory velvet wedding gift trunk lined in golden silk, housing a chilled vintage champagne bottle, a gold foil embossed soy candle, and fine confectionery jars under soft golden studio glow, editorial product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEubm8dt3H2Uo628g8N18lZSLe-pvBowLBlPUUGJOBsv0Nd64yIebrzW_ZTr1PKWpS0sG5KyvLjO39p44k-t1_hfPCsblVfejwnKjvlraZLuwdSQHYHovAQyMUmqeLRssOWL33QsXilZYPC4SRU4j-fQk7nxp066GYZOfBg2_z0qcxZ8K5I15iPfrIalY3yh8kULKyuukRcpcmu4ZedxOZCDPKqMeqJ2lAlchtVu7uGIYqNkpIcUa70Q"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 items-start">
+<span class="bg-primary text-on-primary font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider shadow-sm">
+            Bestseller
+          </span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-medium">
+            Hand-Embroidered
+          </span>
+</div>
+<!-- Wishlist Heart -->
+<button class="wishlist-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">4.9</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(86)</span>
+</div>
+<h2 class="font-title-md text-[14px] leading-tight text-on-surface font-semibold truncate mb-1">The Sovereign Ivory Trunk</h2>
+<p class="font-body-sm text-[11px] leading-tight text-on-surface-variant line-clamp-2 mb-2">
+            Moët &amp; Chandon, Soy Candle, Gold Leaf Almonds, Velvet Trinket Box
+          </p>
+</div>
+<div class="pt-1">
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-[15px] font-bold text-primary">₹18,500</span>
+<span class="font-label-sm text-[11px] text-outline line-through">₹21,000</span>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<button class="w-full py-1.5 rounded-lg bg-surface-container font-label-sm text-[10px] text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-0.5" onclick="triggerQuickView('The Sovereign Ivory Velvet Trunk', '₹18,500', 'Moët &amp; Chandon, Soy Candle, Gold Leaf Almonds, Velvet Trinket Box', '4.9★ (86)', 'Bestseller')">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              View
+            </button>
+<button class="add-to-cart-btn w-full py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold shadow-xs active:scale-95 transition-transform flex items-center justify-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shopping_bag</span>
+              Add
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Product 2: Blush & Peony Bridal Pamper Hamper -->
+<article class="bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxurious bridal pamper gift set in pale rose quartz pink tones with silk eye mask, rose quartz facial roller, artisanal scented pink Himalayan bath salts in glass jar, and blush ribbon trims on textured ivory surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClrjyJ_9-nzBY08xSpiXn0GlNUsV2-aoEERxtvTdMb2ZDWuGARdBBFqyzpfrjKlCqNPB5Ad1nwld69oet1BzFqz8KDEZJ0CgGvj9KVOUhMf9RKIwgDEKtyJokG_lILo2Xkj-BwBvXnq2g1JXzv1da4WI6PYyJgF6eQDUGtYgKi1Mm-47LqfBfP15__3SRvNWSMT0fsclDuxgVwoG2tn0Wm4amESCqqLyfO_-M5d0c2lOcCeU6SjZd9_Q"/>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 items-start">
+<span class="bg-secondary text-on-secondary font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-semibold uppercase tracking-wider shadow-sm">
+            Bride Favorite
+          </span>
+</div>
+<button class="wishlist-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">4.8</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(112)</span>
+</div>
+<h2 class="font-title-md text-[14px] leading-tight text-on-surface font-semibold truncate mb-1">Blush &amp; Peony Bridal Pamper</h2>
+<p class="font-body-sm text-[11px] leading-tight text-on-surface-variant line-clamp-2 mb-2">
+            Silk eye mask, Rose quartz roller, organic bath salts, Belgian pralines
+          </p>
+</div>
+<div class="pt-1">
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-[15px] font-bold text-primary">₹7,800</span>
+<span class="font-label-sm text-[11px] text-outline line-through">₹8,999</span>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<button class="w-full py-1.5 rounded-lg bg-surface-container font-label-sm text-[10px] text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-0.5" onclick="triggerQuickView('Blush &amp; Peony Bridal Pamper Hamper', '₹7,800', 'Silk eye mask, Rose quartz roller, organic bath salts, artisanal chocolates', '4.8★ (112)', 'Bride Favorite')">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              View
+            </button>
+<button class="add-to-cart-btn w-full py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold shadow-xs active:scale-95 transition-transform flex items-center justify-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shopping_bag</span>
+              Add
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Product 3: Bridesmaid Squad Pastel Keepsake -->
+<article class="bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Charming pastel bridesmaid keepsake set displayed in a mint and blush keepsake box with a personalized insulated tumbler, dainty gold chain monogram pendant, and floral pressed scented wax tablet." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_300TETmS_R22e15d6LNGhMiNJAw3Sgr2ZWUv4tjFUshVg2C0iN_Ef7081VoUqnqhzeb3k9AOvm9lS8eZa2bgE8EWNZndf7C8_U4JfoLFmqjYcwwCS9eRfsuRrMYRwKHyW-6GzdmXNEKzSEYGv9WTuW0OHEsEIQClOAEQ2JrQ4eDVZwiZJsDgAv6XGYOVLg1caJ2-HWlEcJ6JfKA4PN23KyLceQydZocS9sELjdBC7E_w5f7t6Iao9A"/>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 items-start">
+<span class="bg-tertiary-container text-on-tertiary-container font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-semibold">
+            Bundle Offer
+          </span>
+</div>
+<button class="wishlist-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">5.0</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(64)</span>
+</div>
+<h2 class="font-title-md text-[14px] leading-tight text-on-surface font-semibold truncate mb-1">Bridesmaid Pastel Keepsake</h2>
+<p class="font-body-sm text-[11px] leading-tight text-on-surface-variant line-clamp-2 mb-2">
+            Personalised tumbler, gold pendant, botanical scented wax tablet
+          </p>
+</div>
+<div class="pt-1">
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-[15px] font-bold text-primary">₹5,400</span>
+<span class="font-label-sm text-[11px] text-outline line-through">₹6,200</span>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<button class="w-full py-1.5 rounded-lg bg-surface-container font-label-sm text-[10px] text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-0.5" onclick="triggerQuickView('Bridesmaid Squad Pastel Keepsake', '₹5,400', 'Personalised tumbler, gold pendant, scented wax tablet, handwritten calligraphy note', '5.0★ (64)', 'Bundle Offer')">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              View
+            </button>
+<button class="add-to-cart-btn w-full py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold shadow-xs active:scale-95 transition-transform flex items-center justify-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shopping_bag</span>
+              Add
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Product 4: Nawabi Heritage Saffron & Oudh Hamper -->
+<article class="bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Regal Indian wedding hamper arranged in an antiqued brass and carved teakwood box featuring vials of red Kashmiri saffron, crystal attar flask, handcrafted brass diya lamp, and gilded dry fruit jars on royal amber velvet." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKfvJ0zzx8T6DPh9bpSkkC3EjtXojnG8nklkcddWEAUOIK3tUaq0Uh7Gg0T9YXtCPUKbRWOIqJ6-bNNjgwLrAWZQadc3T9WIBdYV2Z-ckCAileQe5AT3xSD4w9nGuCzl7lCqirSpSyICSvBrwo1IecOhstTWFztX2InQ-BbgNGLjQkUMBpuurmuEdFJgKz3yBoRfJC4mO7O_I5bmh2vEQn9ag8OnOldKIdOs4oopOABFj30qLe20AOwA"/>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 items-start">
+<span class="bg-primary text-on-primary font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider shadow-sm">
+            Royal Suite
+          </span>
+</div>
+<button class="wishlist-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">4.9</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(42)</span>
+</div>
+<h2 class="font-title-md text-[14px] leading-tight text-on-surface font-semibold truncate mb-1">Nawabi Heritage Saffron &amp; Oudh</h2>
+<p class="font-body-sm text-[11px] leading-tight text-on-surface-variant line-clamp-2 mb-2">
+            Pure Kashmiri saffron, attar, brass diya, luxury dry fruit box
+          </p>
+</div>
+<div class="pt-1">
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-[15px] font-bold text-primary">₹12,900</span>
+<span class="font-label-sm text-[11px] text-outline line-through">₹14,500</span>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<button class="w-full py-1.5 rounded-lg bg-surface-container font-label-sm text-[10px] text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-0.5" onclick="triggerQuickView('Nawabi Heritage Saffron &amp; Oudh Hamper', '₹12,900', 'Pure Kashmiri saffron, attar, brass diya, luxury dry fruit box', '4.9★ (42)', 'Royal Suite')">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              View
+            </button>
+<button class="add-to-cart-btn w-full py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold shadow-xs active:scale-95 transition-transform flex items-center justify-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shopping_bag</span>
+              Add
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Product 5: The Groom's Sterling Celebration Hamper -->
+<article class="bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated groom gifting kit inside a dark emerald and matte gold leatherette box containing an Italian tan leather billfold wallet, rhodium cufflinks, heavy lead-free crystal scotch tumbler, and artisanal pour-over coffee sachets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWi8h-LvpfiewYX8ld6kuNpM8BmhdP39Siz8OMurFd-ntrK5C5oj-f7k8teJZZu33pMUqL7jKWQLhOh6pduaXIwB9vAsbjixZpB8u31CeBlLIZDaKk6xCAot6joakUV8S3mPFaZVUJKYzxDacA6182EJpTFbKCN8k9R53h102sYtmVekEKT1aJAv1a9zlG1Yqmz79DFdEt-wu8VzSUG6fQYL2wxq8lrMZynlV2JhGYCxKVl6-M7Oqc5A"/>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 items-start">
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-medium">
+            Groom Edition
+          </span>
+</div>
+<button class="wishlist-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">4.7</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(38)</span>
+</div>
+<h2 class="font-title-md text-[14px] leading-tight text-on-surface font-semibold truncate mb-1">The Groom's Sterling Edition</h2>
+<p class="font-body-sm text-[11px] leading-tight text-on-surface-variant line-clamp-2 mb-2">
+            Italian leather wallet, cufflink set, single malt tumbler, estate coffee
+          </p>
+</div>
+<div class="pt-1">
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-[15px] font-bold text-primary">₹11,200</span>
+<span class="font-label-sm text-[11px] text-outline line-through">₹12,800</span>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<button class="w-full py-1.5 rounded-lg bg-surface-container font-label-sm text-[10px] text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-0.5" onclick="triggerQuickView('The Groom\'s Sterling Celebration Hamper', '₹11,200', 'Italian leather wallet, cufflink set, single malt crystal tumbler, artisanal coffee', '4.7★ (38)', 'Groom Edition')">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              View
+            </button>
+<button class="add-to-cart-btn w-full py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold shadow-xs active:scale-95 transition-transform flex items-center justify-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shopping_bag</span>
+              Add
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Product 6: Sweet Harmony Artisan Pâtisserie Hamper -->
+<article class="bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal confectionery gift basket decorated with satin champagne ribbons, showcasing rainbow French macarons, artisan dark chocolate pralines, wild lavender honey pot, and a gold-rimmed bone china tea cup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3u_k8FjVzkwiU6gTWsWRCiVtLlbXCpwfVM2M4_tVaZge1WkTAUaFN8f21nVCpSJrCVsiLJ2tFJeQQdUBYB7q_bwD44RTtQvOxlvHqMS5eAMon0-hYcDclaKjoZmlgH39NPcC5j_AQjGK-ZhS1WMva8OkZeXROx1I9f3GMKHo4fkFDbggGrPeD5_1ikDayGVL8S4QYeQdV-U19BDSkKMpye45saNqqlziXJWXSzdI9ntgGKulMvBKtEQ"/>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 items-start">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-medium">
+            Sweet Treats
+          </span>
+</div>
+<button class="wishlist-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface">4.9</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(150)</span>
+</div>
+<h2 class="font-title-md text-[14px] leading-tight text-on-surface font-semibold truncate mb-1">Sweet Harmony Pâtisserie</h2>
+<p class="font-body-sm text-[11px] leading-tight text-on-surface-variant line-clamp-2 mb-2">
+            Belgian pralines, lavender honey, French macarons, porcelain tea cup
+          </p>
+</div>
+<div class="pt-1">
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-[15px] font-bold text-primary">₹4,200</span>
+<span class="font-label-sm text-[11px] text-outline line-through">₹4,800</span>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<button class="w-full py-1.5 rounded-lg bg-surface-container font-label-sm text-[10px] text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-0.5" onclick="triggerQuickView('Sweet Harmony Artisan Pâtisserie Hamper', '₹4,200', 'Handcrafted Belgian pralines, lavender honey, French macarons, porcelain tea cup', '4.9★ (150)', 'Sweet Treats')">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              View
+            </button>
+<button class="add-to-cart-btn w-full py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold shadow-xs active:scale-95 transition-transform flex items-center justify-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shopping_bag</span>
+              Add
+            </button>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Bespoke Concierge Callout Banner -->
+<section class="px-gutter-mobile py-space-sm">
+<div class="bg-gradient-to-r from-secondary-container to-surface-container-high rounded-2xl p-4 shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">drafts</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold uppercase tracking-wider">Bulk Wedding Gifting</span>
+<h3 class="font-title-lg text-title-lg text-on-surface leading-tight">Curating 25+ Hampers?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Get custom wooden monogram seals &amp; personal concierge pricing.</p>
+</div>
+</div>
+</section>
+<!-- Load More Section -->
+<section class="px-gutter-mobile py-space-md flex flex-col items-center gap-space-xs">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Showing 6 of 48 bespoke hampers</p>
+<div class="w-36 h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-1/8 h-full bg-primary-container"></div>
+</div>
+<button class="mt-2 w-full max-w-xs py-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:shadow-md active:scale-98 transition-all flex items-center justify-center gap-2" id="loadMoreBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">autorenew</span>
+      Load More Bespoke Hampers
+    </button>
+</section>
+<!-- Quick View Modal Drawer (Hidden by default, triggered via JS) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-xs hidden transition-opacity flex flex-col justify-end" id="quickViewBackdrop">
+<div class="w-full bg-surface-container-lowest rounded-t-3xl p-5 shadow-2xl flex flex-col gap-4 max-h-[85vh] overflow-y-auto transform transition-transform">
+<div class="w-10 h-1 bg-surface-container-highest rounded-full mx-auto mb-1"></div>
+<!-- Drawer Header -->
+<div class="flex items-start justify-between">
+<div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-[10px] px-2 py-0.5 rounded-full font-semibold mb-1 inline-block" id="modalBadge">
+            Bestseller
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight" id="modalTitle">Hamper Name</h3>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-0.5" id="modalRating">4.9★ (86 Reviews)</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="closeQuickView">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Live Mocked Details -->
+<div class="bg-surface-container-low p-3.5 rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Trousseau Composition</span>
+<p class="font-body-md text-body-md text-on-surface" id="modalIncludes">Included luxury items</p>
+</div>
+<!-- Wax Seal & Monogram Highlight -->
+<div class="flex items-center gap-3 p-3 bg-secondary-fixed/30 rounded-xl">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div class="flex flex-col text-on-secondary-fixed-variant">
+<span class="font-title-md text-[13px] font-semibold">Wax Seal &amp; Calligraphy Included</span>
+<span class="font-body-sm text-[11px]">Includes hand-poured metallic gold wax seal and deckle-edge vows.</span>
+</div>
+</div>
+<!-- Bottom Actions -->
+<div class="flex items-center justify-between gap-3 pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Value</span>
+<span class="font-title-lg text-title-lg text-primary font-bold" id="modalPrice">₹0</span>
+</div>
+<div class="flex items-center gap-2 flex-1 justify-end">
+<button class="px-3 py-2.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="modalBulkInquiry">
+            Bulk (10+)
+          </button>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md active:scale-95 transition-transform flex items-center gap-1.5" id="modalAddToCart">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+            Add to Hamper Bag
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container for Micro-actions -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full font-label-md text-label-md shadow-xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300" id="toastMessage">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span id="toastText">Added to your curated cart</span>
+</div>
+</div>
+<script>
+  // Quick View Modal Controller
+  function triggerQuickView(title, price, includes, rating, badge) {
+    const modal = document.getElementById('quickViewBackdrop');
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalPrice').textContent = price;
+    document.getElementById('modalIncludes').textContent = includes;
+    document.getElementById('modalRating').textContent = rating;
+    document.getElementById('modalBadge').textContent = badge;
+    modal.classList.remove('hidden');
+  }
+
+  document.getElementById('closeQuickView').addEventListener('click', () => {
+    document.getElementById('quickViewBackdrop').classList.add('hidden');
+  });
+
+  document.getElementById('quickViewBackdrop').addEventListener('click', (e) => {
+    if (e.target.id === 'quickViewBackdrop') {
+      document.getElementById('quickViewBackdrop').classList.add('hidden');
+    }
+  });
+
+  // Toast micro-interaction helper
+  function showToast(message) {
+    const toast = document.getElementById('toastMessage');
+    const toastText = document.getElementById('toastText');
+    toastText.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2400);
+  }
+
+  // Add to cart interactive feedback
+  document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showToast('Hamper added to your bridal cart ✨');
+    });
+  });
+
+  document.getElementById('modalAddToCart').addEventListener('click', () => {
+    document.getElementById('quickViewBackdrop').classList.add('hidden');
+    showToast('Hamper successfully added! ✨');
+  });
+
+  document.getElementById('modalBulkInquiry').addEventListener('click', () => {
+    document.getElementById('quickViewBackdrop').classList.add('hidden');
+    showToast('Concierge requested! Wedding stylist will connect on WhatsApp.');
+  });
+
+  // Wishlist toggle interaction
+  document.querySelectorAll('.wishlist-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+      if (isFilled) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-primary');
+        btn.classList.add('text-secondary');
+        showToast('Removed from wishlist');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add('text-primary');
+        btn.classList.remove('text-secondary');
+        showToast('Saved to your bridal wishlist ❤️');
+      }
+    });
+  });
+
+  // Category pill selection switch
+  document.querySelectorAll('.category-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
+      document.querySelectorAll('.category-chip').forEach(c => {
+        c.className = 'category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-primary';
+        if (c.querySelector('.material-symbols-outlined')) {
+          c.querySelector('.material-symbols-outlined').remove();
+        }
+      });
+      this.className = 'category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all shadow-sm bg-secondary-container text-on-secondary-container font-semibold flex items-center gap-1.5';
+      const checkIcon = document.createElement('span');
+      checkIcon.className = 'material-symbols-outlined text-[14px]';
+      checkIcon.textContent = 'check';
+      this.prepend(checkIcon);
+    });
+  });
+
+  // Load more simulator
+  document.getElementById('loadMoreBtn').addEventListener('click', function() {
+    this.disabled = true;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin text-primary">progress_activity</span> Curating additional hampers...';
+    setTimeout(() => {
+      this.disabled = false;
+      this.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">done_all</span> All 48 Hampers Displayed';
+      showToast('All 48 matrimonial hampers loaded.');
+    }, 1200);
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_-4px_rgba(119,90,25,0.08)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">home</span><span class="font-label-sm text-[10px] tracking-wide">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 transition-colors group text-primary font-semibold" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">auto_awesome_mosaic</span><span class="font-label-sm text-[10px] tracking-wide">Catalog</span></a><a class="relative flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="custom-builder" href="#"><span class="absolute -top-1 right-2 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="material-symbols-outlined text-[22px] text-primary group-hover:rotate-12 transition-transform">magic_button</span><span class="font-label-sm text-[10px] tracking-wide text-primary font-medium">Builder</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">local_mall</span><span class="font-label-sm text-[10px] tracking-wide">Cart</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="account" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">person_pin</span><span class="font-label-sm text-[10px] tracking-wide">Account</span></a></div></nav></body></html>

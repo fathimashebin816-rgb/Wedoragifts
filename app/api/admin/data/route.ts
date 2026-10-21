@@ -1,0 +1,2 @@
+import {NextResponse} from 'next/server';import {isAdmin} from '@/lib/admin-auth';import {getProducts,getPurchases} from '@/lib/sheets';
+export async function GET(){if(!await isAdmin())return NextResponse.json({error:'Unauthorized'},{status:401});try{const [products,purchases]=await Promise.all([getProducts(),getPurchases()]);return NextResponse.json({products,purchases})}catch(e){return NextResponse.json({error:e instanceof Error?e.message:'Unable to load sheet data'},{status:502})}}

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fdf9f3;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#775a19", "on-tertiary-container": "#493900", "inverse-surface": "#31302d", "surface-variant": "#e6e2dc", "surface-tint": "#775a19", "on-tertiary": "#ffffff", "on-secondary-container": "#755d56", "on-surface-variant": "#4e4639", "primary-fixed": "#ffdea5", "on-surface": "#1c1c18", "surface": "#fdf9f3", "on-primary-container": "#4e3700", "tertiary-fixed-dim": "#e9c349", "surface-container": "#f1ede7", "on-primary": "#ffffff", "on-primary-fixed": "#261900", "on-error": "#ffffff", "secondary-fixed": "#fcdcd3", "secondary": "#715952", "background": "#fdf9f3", "on-secondary-fixed-variant": "#57423b", "inverse-on-surface": "#f4f0ea", "inverse-primary": "#e9c176", "surface-bright": "#fdf9f3", "on-secondary-fixed": "#281712", "on-background": "#1c1c18", "secondary-fixed-dim": "#dfc0b7", "outline-variant": "#d1c5b4", "outline": "#7f7667", "error-container": "#ffdad6", "surface-container-highest": "#e6e2dc", "on-secondary": "#ffffff", "primary-fixed-dim": "#e9c176", "surface-dim": "#dddad4", "tertiary": "#735c00", "primary-container": "#c5a059", "on-error-container": "#93000a", "on-primary-fixed-variant": "#5d4201", "surface-container-low": "#f7f3ed", "error": "#ba1a1a", "secondary-container": "#f9d9d0", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffe088", "surface-container-high": "#ebe8e2", "on-tertiary-fixed-variant": "#574500", "tertiary-container": "#c5a129", "on-tertiary-fixed": "#241a00" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "2rem", "gutter": "1.5rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.005em", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(119,90,25,0.08)] pt-safe"><div class="bg-secondary-container text-on-secondary-container px-gutter-mobile py-space-xs text-center flex items-center justify-center"><p class="font-label-sm text-label-sm tracking-wider uppercase font-semibold truncate">Complimentary Pan-India Luxury Shipping on Orders Above ₹4,999 ✨</p></div><div class="h-20 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Wedora Gifts Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0AHr5S8G4FPxQnN109bldA8xsSlmYWQBHZWbJGjnkHzOfzD5bnQKQh9HBFmt1m7B3EXiPQ-7s5KnqvhAWhOzq8qIiTLXAsppXWqWB7i-7iXN34w0BMMOryuJgCpSeAJs0MEqPSeNYmRinGt5ThXKI5M-XEk3HwyLHbolDKx7NwdDr0Wm5_zZ5H-C25cgkyVTHiwg9qKFbNokP15MI83pawKWdd74b4pawzQsufEPs4lX28NOd2SvVnw"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">Wedora Gifts</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase text-[9px] truncate">Custom Builder</span></div></div><div class="flex items-center gap-1 flex-shrink-0"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Wishlist" class="relative w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2 right-2 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-[10px] leading-none">2</span></button><button aria-label="Bag" class="relative w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px] leading-none font-bold">3</span></button><a aria-label="Profile" class="w-11 h-11 flex items-center justify-center pl-1" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_rgba(119,90,25,0.2)] ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvSlyZeqv8E3aPqZyxOUEL-_f1pTWR4SjtsLTJxSZDOhOc7NrN1nJAqCJ_mLxYvI92-W9MxcuatAjpDjF40ughrnc7POA6iiyckzTJY5NtKgA4KM8hyWdDdDY-fXlGPU2EPcWJwV8ARMZWg1_hmSYt3Ro5E0-bNw1lFqulfiTDKjaDnwa0fmxRctMm-QhR2w8OdoqnbOXc1Yb64qdN7-8JRdpGTeJollvGjU6kPVXl90ipelQEb5YsXA"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-24 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Atelier Intro Header -->
+<div class="px-gutter-mobile pt-space-xs pb-space-sm flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container mb-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-[10px]">The Bespoke Hamper Studio</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight font-serif">Curate an Unforgettable Offering</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Artisanal vessels, hand-picked treasures, and warm gold foil seals assembled by master gifters.</p>
+</div>
+<!-- Satin Ribbon Interactive Step Bar -->
+<div class="sticky top-20 z-30 bg-surface/95 backdrop-blur-md py-space-sm px-gutter-mobile shadow-[0_6px_18px_-6px_rgba(119,90,25,0.08)]">
+<div class="flex items-center justify-between relative max-w-md mx-auto">
+<!-- Background Connecting Golden Thread -->
+<div class="absolute left-4 right-4 top-1/2 -translate-y-1/2 h-0.5 bg-surface-variant z-0"></div>
+<div class="absolute left-4 top-1/2 -translate-y-1/2 h-0.5 bg-primary transition-all duration-500 z-0" id="progress-bar-fill" style="width: 50%;"></div>
+<!-- Step 1 -->
+<button class="relative z-10 flex flex-col items-center group focus:outline-none" onclick="scrollToStep('step-vessel')">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-primary text-on-primary shadow-md transition-all duration-300" id="step-node-1">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary font-bold mt-1 tracking-wider uppercase">Vessel</span>
+</button>
+<!-- Step 2 -->
+<button class="relative z-10 flex flex-col items-center group focus:outline-none" onclick="scrollToStep('step-gifts')">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-primary text-on-primary ring-4 ring-primary-fixed/40 shadow-md transition-all duration-300" id="step-node-2">
+<span class="font-label-sm text-[11px] font-bold">2</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary font-bold mt-1 tracking-wider uppercase">Keepsakes</span>
+</button>
+<!-- Step 3 -->
+<button class="relative z-10 flex flex-col items-center group focus:outline-none" onclick="scrollToStep('step-confections')">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-high text-on-surface-variant transition-all duration-300" id="step-node-3">
+<span class="font-label-sm text-[11px] font-bold">3</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 tracking-wider uppercase">Sweets</span>
+</button>
+<!-- Step 4 -->
+<button class="relative z-10 flex flex-col items-center group focus:outline-none" onclick="scrollToStep('step-finishing')">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-high text-on-surface-variant transition-all duration-300" id="step-node-4">
+<span class="font-label-sm text-[11px] font-bold">4</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 tracking-wider uppercase">Ribbon</span>
+</button>
+</div>
+</div>
+<div class="px-gutter-mobile flex flex-col gap-space-xl mt-space-md pb-28">
+<!-- STEP 1: Packaging & Base Vessel -->
+<section class="flex flex-col gap-space-sm scroll-mt-36" id="step-vessel">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block font-bold">Step 1 of 4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-serif">The Presentation Vessel</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">1 Selected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The tactile first impression of your gift. Each box is handmade with custom golden hinges and satin pulls.</p>
+<!-- Vessels Carousel / Horizontal Scroll -->
+<div class="flex gap-space-sm overflow-x-auto pb-space-xs pt-1 -mx-gutter-mobile px-gutter-mobile snap-x snap-mandatory">
+<!-- Vessel 1 (Selected) -->
+<div class="vessel-card snap-center shrink-0 w-[260px] bg-surface-container-lowest rounded-xl p-space-sm shadow-md flex flex-col justify-between cursor-pointer transition-all duration-300 transform scale-[1.01] shadow-[0_12px_24px_-6px_rgba(119,90,25,0.15)] relative" id="vessel-1" onclick="selectVessel(1, 1200, 'Ivory &amp; Gold Embossed Hardbox')">
+<div class="absolute top-3 right-3 z-10 bg-primary text-on-primary rounded-full p-1 shadow-sm flex items-center justify-center check-badge">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Exquisite heavy ivory paperboard hardbox with debossed metallic champagne gold floral filigree motifs and gold foiled logo, surrounded by lush silk petals, luxury gift presentation studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW-DtnSJiwh2WZI-7qLvBCHtjNQUS-BlmUz9OFt6UunLqAgwBlcVBKCuCO4SCfckyh9qkyG34uboflcayr_IFyGziJzt1tpwEIcdoYtCVY2qx2cDdd8sq5r-qx_TcOsqlztQ-afpJzuFvL-UQc-OgCLQkLaD8_v_xxFx0YZ0BCazjzV-n08Wa2bthLqMoD9cAUxmslYTel3C7phKPQyxP1hAOoBpAwNKUo5p9UwBF19l3GDRzMe_XsVg"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-[10px] font-semibold">Signature Atelier</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-serif">Ivory &amp; Gold Hardbox</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Heavy rigid board, magnetic close with gold foil crest.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold">₹1,200</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-primary font-bold selection-text">Selected</span>
+</div>
+</div>
+<!-- Vessel 2 -->
+<div class="vessel-card snap-center shrink-0 w-[260px] bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between cursor-pointer transition-all duration-300" id="vessel-2" onclick="selectVessel(2, 2400, 'Blush Pink Suede Trunk with Brass Clasp')">
+<div>
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Handcrafted dusty blush pink velvet suede gift trunk with antique brushed brass closure lock and reinforced corners, heirloom wedding keepsake box setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrYZDDD0WGWfgajYRuAtTonh7dly-tnjHUxLnyS7WdAa-iYfn8NBS_IOrGycrl5R9IcEUQ5oWLvuEGuEpOC3qXjwUpzBPcRguZa-5eJL6jRd9d6eRg8ykmghEFf-eST-cTO6Lb7NKghBreT_JifhKmNnwTEvAh87MZGdjGWij9UhjXW_ef30EnBZlHtbx8__EAZuLK4pmEepOP-Z4RetAP-Heb6NTKPWwDf-Y-A55Op9IKO1G9ckgFFg"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-semibold">Heirloom Trunk</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-serif">Blush Suede Trunk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Soft velvet suede exterior with vintage brass lock clasp.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold">₹2,400</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant selection-text">Select</span>
+</div>
+</div>
+<!-- Vessel 3 -->
+<div class="vessel-card snap-center shrink-0 w-[260px] bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between cursor-pointer transition-all duration-300" id="vessel-3" onclick="selectVessel(3, 1600, 'Handwoven Botanical Cane Basket with Satin Lining')">
+<div>
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Artisanal handwoven natural cane picnic hamper basket with champagne satin interior lining and woven handle, styled with soft wild greens and warm natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUKo1NC0bXNcGW0hAU25JqV-AtRpEojMwc0DBPffbR13oRe6W7hCZLCgW6Z20ihVzMc5wJeMtfksuxn_OUlFlAH6EL-cfViQiWnT18mbqgrlR6CapMt1MoOS8Whxw9fKTn6AtJrqOyikrrHxRzu9MEJ81vZntF-ZAlTBdBUcG_18L7XdATpuCu21Hcb5pDqbUlw0lwAQ9SgyzeO5vR1cbz-JxeeFkBNznNqAfsr7wWMyY2P5mINmb-oA"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-semibold">Rustic Chic</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-serif">Botanical Cane Basket</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Hand-braided natural rattan lined with champagne satin.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold">₹1,600</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant selection-text">Select</span>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 2: Luxury Gifts & Keepsakes -->
+<section class="flex flex-col gap-space-sm scroll-mt-36" id="step-gifts">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block font-bold">Step 2 of 4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-serif">Luxury Keepsakes</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/50 px-2 py-0.5 rounded-full font-bold" id="gifts-counter-badge">3 Added</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Timeless celebratory artifacts curated for matrimonial milestones and sacred ceremonies.</p>
+<div class="grid grid-cols-1 gap-space-sm mt-1">
+<!-- Gift Item 1: Brass Diya (Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional 24k gold-plated solid brass diya candle holder with intricate Indian royal jali lattice carving, glowing flame warm reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYSPE45hqJiDp1JhyYZEBBVMKxwjm7tyTdwQscq-fJck7IEpJ6ANhBjbJ33uycal0SKaKmFGWOIJVHa5CRBYyXESnNqfPid0DcCnokmj7z4YN9fu3z3qugjkD2Xl4b7AorEsNJtGZnJa2fL-0a0_5aFUniuNp_YHOKQbONEJyHvgzZP8nKZrHtV7IpibqdhUaLBZ2rZ2WXR4WcUX-9MSF9haLgz_7lrr64_cic7jaqOSvX0nVa9qmx8A"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">24K Gold Plated Diya</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Artisan carved brass with soy wax candle</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹1,450</span>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1 shadow-inner" id="ctrl-diya">
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" onclick="updateQty('diya', -1, 1450)"><span class="material-symbols-outlined text-[16px]">remove</span></button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-bold" id="qty-diya">1</span>
+<button class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center hover:opacity-90" onclick="updateQty('diya', 1, 1450)"><span class="material-symbols-outlined text-[16px]">add</span></button>
+</div>
+</div>
+</div>
+<!-- Gift Item 2: Moroccan Rose Elixir (Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Luxury amber glass dropper bottle of Moroccan organic rose bath elixir oil alongside crushed rose petals and glass jar of mineral body scrub on white marble" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvgT5Mo6YvcveaFZWG2DElpvMP2cN0vfEJliZutVy7CYkR8EDXBU4W7P8SVSOr1mSiGiUOvhQqTLFz1tPS5bcON5z2QS0x3Dond2r9t_dEIJIWW8Uz4ue1FXSL9FYjZ54s4KVOMtuxb-qOlIoRclQ1jUfzDZH9MBiimSHjrS395ZSU59sn4iLJxZ6S21xaN-9yfUxYzZFEnlY7ugYWNk5j26VYlOKx1VGWg6SjjTecw2Z8XnnfEw9_qA"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">Moroccan Rose Bath Elixir</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Botanical body nectar &amp; Himalayan salts</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹1,200</span>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1 shadow-inner" id="ctrl-rose">
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" onclick="updateQty('rose', -1, 1200)"><span class="material-symbols-outlined text-[16px]">remove</span></button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-bold" id="qty-rose">1</span>
+<button class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center hover:opacity-90" onclick="updateQty('rose', 1, 1200)"><span class="material-symbols-outlined text-[16px]">add</span></button>
+</div>
+</div>
+</div>
+<!-- Gift Item 3: Personalised Flutes (Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Pair of crystal champagne flutes with delicate 24k gold leaf calligraphy rim and monogrammed initials, effervescent champagne bubbles in luxury wedding suite" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzBd3FJ0IoFNnxdgz0YxM-lWlaloPYx-C25_v_dS_VeP4n8sEScvAe8s18XFB2q0GMV2vGOtJcGPJSUplMWBHqX-DnA2WkhvDpIrN4QxGK1VRDNYnJa1UhDiB9UCKCIpzAlm2a0KGOJCk4ReS9GRrkR9irkc8-VQJqfNNjQA5heUXwHMzY-q5clniBNcHigLdhVAGtm3xAMN8qvPbkgyPNVbIW3Cp-xI-H94adO2S27BSLY54tGY9Pag"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">Gold Foil Flutes (Pair)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Hand-blown lead crystal with engraved rim</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹2,200</span>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1 shadow-inner" id="ctrl-flutes">
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" onclick="updateQty('flutes', -1, 2200)"><span class="material-symbols-outlined text-[16px]">remove</span></button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-bold" id="qty-flutes">1</span>
+<button class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center hover:opacity-90" onclick="updateQty('flutes', 1, 2200)"><span class="material-symbols-outlined text-[16px]">add</span></button>
+</div>
+</div>
+</div>
+<!-- Gift Item 4: Silk Robe (Not Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Folded champagne mulberry silk loungewear robe with delicate floral lace trim cuffs and personalized gold bullion embroidered monogram" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA114F1vGCs_mUitrezxsUxwDnp6XAufe46xdwBvJebIabeceTTX2fpcGIXTs8dsbiTMcLj87NzycBLGKcTElmUn8Wj6B0ZbhG2N7N4CudjL_8n6szLhPIPnGPUZDgQbTavQyQ2PjJ4o_8Z0-v42B4GVOW2mbZSz5wef1h5PwS6nl-153IpCVJyNKoEFD-F63-Oenyq5Wztv2WxBU2-rWACFEYrcopGYyS99657MCyxeY7gbGC_lyzV6w"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">Embroidered Silk Robe</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">100% pure Mulberry silk, gold thread</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹2,800</span>
+</div>
+</div>
+<div class="shrink-0">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md flex items-center gap-1" id="btn-add-robe" onclick="toggleItem('robe', 2800, 'Silk Robe with Embroidered Monogram')">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+<!-- Gift Item 5: Raw Wildflower Honey (Not Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Faceted hexagonal glass jar of golden wild organic forest honey with olive wood dipper wand and wax bee seal on lid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfLrGzHCe2ouPkkGF_WcLPQ88twze79IMvqPgkdw4QrX14cFAy2mvZZlLAum1JzEv4RMz-4lxQG3zOYTu7f5ejBMdQjnSoZXdC2_8PjU_k9OOqUlLq2Y1H0rUrNLZ9Ic_1eao2vzankgcizF1uJ4Eg6UJCLdkw17tGWQIu9-FFuByPRGfve8Vy8GHrBUDE5XaLXDQJmXBr2V7zzdxlXOgp8qSC5aVVPmDv_U1J4lcP5HUAZzuRqT0q6g"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">Wildflower Honey &amp; Dipper</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Himalayan organic raw comb honey</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹850</span>
+</div>
+</div>
+<div class="shrink-0">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md flex items-center gap-1" id="btn-add-honey" onclick="toggleItem('honey', 850, 'Raw Wildflower Honey &amp; Dipper')">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 3: Confections & Teas -->
+<section class="flex flex-col gap-space-sm scroll-mt-36" id="step-confections">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block font-bold">Step 3 of 4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-serif">Confections &amp; Delicacies</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/50 px-2 py-0.5 rounded-full font-bold" id="confect-counter-badge">1 Added</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Handcrafted artisanal sweets infused with rare spices, edible gold, and floral waters.</p>
+<div class="grid grid-cols-1 gap-space-sm mt-1">
+<!-- Confection 1: Truffles (Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Artisanal dark chocolate ganache truffles coated in edible 24k gold leaf foil arranged inside an emerald green and gold gift box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtBilOcAjDssVaBkvhg3hfk43VmkmV8g5hgl7KNbIlkpNRY6xtNq_oJZZ2-dN0ax9GOz8D2o4jXZI2Z2Jy1ERL7Vm6XWqdCZs3QfDEOw8oTSA0-mpkuTkjUYtpWRT3pwO4TpGvFuKapIBW7Y1gcD0ap0Zo_v93lmwtM_M7mEz1TJAsrHZgcPxm90mCVPrK78AXaYk6wQBLalQQZey7ldHQ44QmSnSr57QPNsWgp8rKXm_MDu1jLtRDuA"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">Gold Leaf Truffles (12 pcs)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Belgian 70% dark single origin cacao</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹1,350</span>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1 shadow-inner" id="ctrl-truffles">
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" onclick="updateQty('truffles', -1, 1350)"><span class="material-symbols-outlined text-[16px]">remove</span></button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-bold" id="qty-truffles">1</span>
+<button class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center hover:opacity-90" onclick="updateQty('truffles', 1, 1350)"><span class="material-symbols-outlined text-[16px]">add</span></button>
+</div>
+</div>
+</div>
+<!-- Confection 2: Turkish Delights (Not Added) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Soft pink rosewater Turkish delight cubes rolled in green Iranian pistachio dust and powdered confectioners sugar on a hand-beaten brass plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxj7f33p5y2s1GcWeLnNuWzSc4D9mk-W7uHQ0NFiHIAP1sxVVOV0hQMxY2x-QyC5tXF7AJt2l8lJJzDFGk_XBUiLiBwykVQ3eR0IDe4W_PIXidtCRAlLVPsf9d-POB5Y312xZ61ft246ZfW3kP43WcfqtoELjBAmYHTnWGd7GODdhemz6b8YYvy5k8RfwsuKDssYJXBJAdzf5UEJoIXgLKSq0pm3QNEoep_iglTJLjNppZE0IJe6M_Tw"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-serif truncate">Rose Pistachio Delights</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Damask rosewater &amp; Iranian green pistachios</p>
+<span class="font-title-md text-title-md text-primary font-bold">₹950</span>
+</div>
+</div>
+<div class="shrink-0">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md flex items-center gap-1" id="btn-add-delights" onclick="toggleItem('delights', 950, 'Rose Pistachio Turkish Delights')">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 4: Finishing Touches (Ribbon, Wax Seal & Calligraphy Card) -->
+<section class="flex flex-col gap-space-md scroll-mt-36" id="step-finishing">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block font-bold">Step 4 of 4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-serif">Finishing Touches</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-bold">Complimentary</span>
+</div>
+<!-- Ribbon Swatch Selection -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">texture</span>
+          Double-Faced Satin Ribbon
+        </label>
+<div class="grid grid-cols-4 gap-2 pt-1">
+<!-- Champagne Gold (Selected) -->
+<button class="ribbon-btn p-2 rounded-lg bg-surface-container-high flex flex-col items-center gap-1.5 text-center transition-all bg-primary-fixed/40" onclick="selectRibbon('Champagne Gold', this)" type="button">
+<div class="w-6 h-6 rounded-full shadow-sm bg-[#c5a059] flex items-center justify-center text-on-primary text-[12px]">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface font-semibold truncate w-full">Champagne</span>
+</button>
+<!-- Blush Pink -->
+<button class="ribbon-btn p-2 rounded-lg bg-surface-container-low flex flex-col items-center gap-1.5 text-center transition-all" onclick="selectRibbon('Blush Pink', this)" type="button">
+<div class="w-6 h-6 rounded-full shadow-sm bg-[#f9d9d0]"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate w-full">Blush</span>
+</button>
+<!-- Sage Green -->
+<button class="ribbon-btn p-2 rounded-lg bg-surface-container-low flex flex-col items-center gap-1.5 text-center transition-all" onclick="selectRibbon('Sage Green', this)" type="button">
+<div class="w-6 h-6 rounded-full shadow-sm bg-[#b4c3b2]"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate w-full">Sage</span>
+</button>
+<!-- Bordeaux Red -->
+<button class="ribbon-btn p-2 rounded-lg bg-surface-container-low flex flex-col items-center gap-1.5 text-center transition-all" onclick="selectRibbon('Bordeaux Red', this)" type="button">
+<div class="w-6 h-6 rounded-full shadow-sm bg-[#6b232e]"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate w-full">Bordeaux</span>
+</button>
+</div>
+</div>
+<!-- Wax Seal Stamp Selection -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+          Custom Metallic Wax Seal Stamp
+        </label>
+<div class="grid grid-cols-3 gap-2 pt-1">
+<button class="seal-btn p-2.5 rounded-lg bg-primary-fixed/40 flex flex-col items-center gap-1 text-center transition-all" onclick="selectSeal('W Monogram', this)" type="button">
+<div class="w-8 h-8 rounded-full bg-primary text-primary-fixed flex items-center justify-center font-serif text-[14px] font-bold shadow-sm">W</div>
+<span class="font-label-sm text-[11px] font-bold text-on-surface">W Monogram</span>
+</button>
+<button class="seal-btn p-2.5 rounded-lg bg-surface-container-low flex flex-col items-center gap-1 text-center transition-all" onclick="selectSeal('With Love', this)" type="button">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-serif text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">With Love</span>
+</button>
+<button class="seal-btn p-2.5 rounded-lg bg-surface-container-low flex flex-col items-center gap-1 text-center transition-all" onclick="selectSeal('Forever &amp; Always', this)" type="button">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-serif text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Forever</span>
+</button>
+</div>
+</div>
+<!-- Live Hand-Calligraphed Note Card Viewer -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="gift-note-input">
+<span class="material-symbols-outlined text-primary text-[18px]">history_edu</span>
+            Hand-Calligraphed Parchment Note
+          </label>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Deckle Edge &amp; Gold Leaf</span>
+</div>
+<textarea class="w-full p-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all resize-none placeholder:text-outline-variant" id="gift-note-input" oninput="updateLiveNote(this.value)" placeholder="Compose your personal message..." rows="3">Dearest Tanya &amp; Kabir, Wishing you a lifetime of endless love, joyful laughter, and shared dreams. With all our warmth.</textarea>
+<!-- Deckle Edge Parchment Preview Card -->
+<div class="mt-2 p-4 rounded-lg bg-[#FAF6EE] shadow-[inset_0_0_12px_rgba(119,90,25,0.06)] relative overflow-hidden">
+<div class="flex items-center justify-between border-b border-primary/10 pb-2 mb-2">
+<span class="font-label-sm text-[9px] uppercase tracking-widest text-primary font-bold">Wedora Signature Calligraphy</span>
+<span class="material-symbols-outlined text-primary text-[14px]">brush</span>
+</div>
+<p class="font-headline-sm italic text-primary leading-relaxed text-[15px]" id="live-calligraphy-preview">"Dearest Tanya &amp; Kabir, Wishing you a lifetime of endless love, joyful laughter, and shared dreams. With all our warmth."</p>
+<div class="mt-3 flex items-center justify-end gap-1.5 text-right">
+<span class="font-label-sm text-[10px] text-on-surface-variant italic">Pen in Royal Champagne Gold Ink</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Sticky Bottom Cost Calculator & Action Bar -->
+<aside aria-label="Hamper Builder Summary" class="sticky bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-xl px-gutter-mobile py-space-sm shadow-[0_-8px_24px_rgba(119,90,25,0.12)]">
+<div class="max-w-md mx-auto flex flex-col gap-space-xs">
+<!-- Quick Detail Strip -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold truncate" id="summary-items-count">5 bespoke items included</span>
+</div>
+<span class="font-label-sm text-[11px] text-primary flex items-center gap-0.5 shrink-0 font-medium">
+<span class="material-symbols-outlined text-[13px]">verified</span> Free Bespoke Wrapping
+        </span>
+</div>
+<!-- Pricing & Actions Row -->
+<div class="flex items-center justify-between gap-space-sm pt-0.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant font-medium">Total Investment</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight" id="grand-total-display">₹7,650</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">incl. GST</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<!-- 3D Preview Modal Trigger -->
+<button class="h-11 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container-high active:scale-95 transition-all" onclick="togglePreviewModal(true)">
+<span class="material-symbols-outlined text-[18px] text-primary">view_in_ar</span>
+<span class="hidden sm:inline">Preview</span>
+</button>
+<!-- Add Custom Hamper to Cart CTA -->
+<button class="h-11 px-5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-md hover:opacity-95 active:scale-95 transition-all flex items-center gap-2" id="add-to-cart-cta" onclick="addToBagAction()">
+<span>Add to Cart</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Interactive 3D Preview Glassmorphic Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-md hidden items-center justify-center p-gutter-mobile transition-all" id="preview-modal">
+<div class="bg-surface rounded-xl max-w-sm w-full p-space-md shadow-2xl flex flex-col gap-space-sm max-h-[85vh] overflow-y-auto">
+<div class="flex items-center justify-between pb-2 border-b border-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">view_in_ar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Curated Hamper</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="togglePreviewModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="relative w-full h-52 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Top down overhead flatlay presentation of open luxury bespoke ivory gift box filled with 24k gold brass diya, rose bath elixir, champagne crystal flutes, and gold truffles tied in gold satin ribbon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUuHraou2-3dqgHcbSBg78v9LSdzs9km6I1jp6PiNLNLCEu3BrHidW7sRhtOGSivZgM2xvL9JV4Sdxg0mlG8BtbRosJybJkJyAaUTVW8DZBkD_jL1bu27-EWBso_4aI7QnWgOvNQCDGi305CJ82cGiHmEvbPn-mZ1Dw_1ZhZ40KTm5TwbI2C5BSH6ucHQkS7yIpcuD7cbp6awLh0ijySGl-xkTd-jxtEYG2_d2pnivaZV_rggDMAX2Vw"/>
+<div class="absolute bottom-2 left-2 right-2 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-md flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> Atelier Hand-Packed
+          </span>
+<span class="font-label-sm text-[11px] text-on-surface font-semibold" id="modal-item-count">5 Items</span>
+</div>
+</div>
+<!-- Hamper Contents Manifest -->
+<div class="flex flex-col gap-1.5 py-1">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Selected Items</h4>
+<div class="flex flex-col gap-1 text-on-surface font-body-sm text-body-sm" id="modal-items-manifest">
+<!-- Dynamically populated via JS -->
+</div>
+</div>
+<div class="pt-2 border-t border-surface-variant flex items-center justify-between">
+<div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Total Value</span>
+<p class="font-title-lg text-title-lg text-primary font-bold" id="modal-total">₹7,650</p>
+</div>
+<button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:opacity-90" onclick="togglePreviewModal(false); addToBagAction();">
+          Confirm &amp; Add to Cart
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-full shadow-xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none translate-y-2" id="cart-toast">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md font-medium">Bespoke hamper added to your bag! ✨</span>
+</div>
+</div>
+<script>
+  // Hamper Builder State
+  const state = {
+    vessel: { id: 1, name: "Ivory & Gold Embossed Hardbox", price: 1200 },
+    items: {
+      diya: { name: "24K Gold Plated Brass Diya", qty: 1, price: 1450 },
+      rose: { name: "Moroccan Rose Bath Elixir & Scrub", qty: 1, price: 1200 },
+      flutes: { name: "Personalised Gold Foil Champagne Flutes", qty: 1, price: 2200 },
+      truffles: { name: "Belgian Gold Leaf Truffle Box (12 pcs)", qty: 1, price: 1350 },
+      robe: { name: "Silk Robe with Embroidered Monogram", qty: 0, price: 2800 },
+      honey: { name: "Raw Wildflower Honey & Dipper", qty: 0, price: 850 },
+      delights: { name: "Rose Pistachio Turkish Delights", qty: 0, price: 950 }
+    },
+    ribbon: "Champagne Gold",
+    seal: "W Monogram"
+  };
+
+  function recalculateTotal() {
+    let total = state.vessel.price;
+    let totalItems = 1; // Vessel counts as 1 presentation item
+
+    for (const key in state.items) {
+      if (state.items[key].qty > 0) {
+        total += state.items[key].qty * state.items[key].price;
+        totalItems += state.items[key].qty;
+      }
+    }
+
+    const formatted = '₹' + total.toLocaleString('en-IN');
+    document.getElementById('grand-total-display').textContent = formatted;
+    document.getElementById('modal-total').textContent = formatted;
+    document.getElementById('summary-items-count').textContent = totalItems + " bespoke items included";
+    document.getElementById('modal-item-count').textContent = totalItems + " Items";
+
+    // Update Step 2 & 3 count tags
+    const giftCount = (state.items.diya.qty) + (state.items.rose.qty) + (state.items.flutes.qty) + (state.items.robe.qty) + (state.items.honey.qty);
+    const confectCount = (state.items.truffles.qty) + (state.items.delights.qty);
+
+    document.getElementById('gifts-counter-badge').textContent = giftCount + " Added";
+    document.getElementById('confect-counter-badge').textContent = confectCount + " Added";
+  }
+
+  function selectVessel(id, price, name) {
+    state.vessel = { id, price, name };
+    document.querySelectorAll('.vessel-card').forEach((card, index) => {
+      const isSelected = (index + 1) === id;
+      card.classList.toggle('scale-[1.01]', isSelected);
+      card.classList.toggle('shadow-[0_12px_24px_-6px_rgba(119,90,25,0.15)]', isSelected);
+      card.classList.toggle('shadow-md', isSelected);
+      card.classList.toggle('shadow-sm', !isSelected);
+
+      const checkBadge = card.querySelector('.check-badge');
+      const selText = card.querySelector('.selection-text');
+
+      if (isSelected) {
+        if (!checkBadge) {
+          const badge = document.createElement('div');
+          badge.className = 'absolute top-3 right-3 z-10 bg-primary text-on-primary rounded-full p-1 shadow-sm flex items-center justify-center check-badge';
+          badge.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+          card.appendChild(badge);
+        }
+        selText.textContent = 'Selected';
+        selText.className = 'font-label-sm text-[11px] uppercase tracking-wider text-primary font-bold selection-text';
+      } else {
+        if (checkBadge) checkBadge.remove();
+        selText.textContent = 'Select';
+        selText.className = 'font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant selection-text';
+      }
+    });
+    recalculateTotal();
+  }
+
+  function updateQty(itemKey, delta, price) {
+    const current = state.items[itemKey].qty;
+    const newQty = Math.max(0, current + delta);
+    state.items[itemKey].qty = newQty;
+
+    const qtySpan = document.getElementById('qty-' + itemKey);
+    if (qtySpan) qtySpan.textContent = newQty;
+
+    recalculateTotal();
+  }
+
+  function toggleItem(itemKey, price, name) {
+    const btn = document.getElementById('btn-add-' + itemKey);
+    const isAdded = state.items[itemKey].qty > 0;
+
+    if (!isAdded) {
+      state.items[itemKey].qty = 1;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Added';
+      btn.className = "px-3.5 py-1.5 rounded-lg bg-primary text-on-primary transition-colors font-label-md text-label-md flex items-center gap-1 font-bold";
+    } else {
+      state.items[itemKey].qty = 0;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">add</span> Add';
+      btn.className = "px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md flex items-center gap-1";
+    }
+    recalculateTotal();
+  }
+
+  function selectRibbon(color, button) {
+    state.ribbon = color;
+    document.querySelectorAll('.ribbon-btn').forEach(btn => {
+      btn.classList.remove('bg-primary-fixed/40');
+      btn.classList.add('bg-surface-container-low');
+      const innerCircle = btn.querySelector('div');
+      innerCircle.innerHTML = '';
+      const text = btn.querySelector('span');
+      text.classList.remove('font-semibold', 'text-on-surface');
+      text.classList.add('text-on-surface-variant');
+    });
+    button.classList.add('bg-primary-fixed/40');
+    button.classList.remove('bg-surface-container-low');
+    const circle = button.querySelector('div');
+    circle.innerHTML = '<span class="material-symbols-outlined text-[14px] text-white">check</span>';
+    const text = button.querySelector('span');
+    text.classList.add('font-semibold', 'text-on-surface');
+    text.classList.remove('text-on-surface-variant');
+  }
+
+  function selectSeal(sealType, button) {
+    state.seal = sealType;
+    document.querySelectorAll('.seal-btn').forEach(btn => {
+      btn.classList.remove('bg-primary-fixed/40');
+      btn.classList.add('bg-surface-container-low');
+      const text = btn.querySelector('span');
+      text.classList.remove('font-bold', 'text-on-surface');
+      text.classList.add('text-on-surface-variant');
+    });
+    button.classList.add('bg-primary-fixed/40');
+    button.classList.remove('bg-surface-container-low');
+    const text = button.querySelector('span');
+    text.classList.add('font-bold', 'text-on-surface');
+    text.classList.remove('text-on-surface-variant');
+  }
+
+  function updateLiveNote(val) {
+    const preview = document.getElementById('live-calligraphy-preview');
+    if (!val.trim()) {
+      preview.textContent = '"Your live hand-calligraphed vow will render here in gold leaf ink..."';
+      preview.classList.add('opacity-50');
+    } else {
+      preview.textContent = `"${val}"`;
+      preview.classList.remove('opacity-50');
+    }
+  }
+
+  function scrollToStep(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function togglePreviewModal(open) {
+    const modal = document.getElementById('preview-modal');
+    if (open) {
+      // Build manifest items
+      const manifest = document.getElementById('modal-items-manifest');
+      manifest.innerHTML = '';
+
+      // Vessel
+      const vesselRow = document.createElement('div');
+      vesselRow.className = 'flex justify-between text-[13px] py-1 border-b border-surface-variant/40';
+      vesselRow.innerHTML = `<span class="font-medium text-primary">${state.vessel.name}</span><span class="font-bold">₹${state.vessel.price.toLocaleString('en-IN')}</span>`;
+      manifest.appendChild(vesselRow);
+
+      for (const key in state.items) {
+        if (state.items[key].qty > 0) {
+          const row = document.createElement('div');
+          row.className = 'flex justify-between text-[13px] py-1 border-b border-surface-variant/40';
+          row.innerHTML = `<span>${state.items[key].name} (x${state.items[key].qty})</span><span class="font-semibold text-on-surface">₹${(state.items[key].qty * state.items[key].price).toLocaleString('en-IN')}</span>`;
+          manifest.appendChild(row);
+        }
+      }
+
+      // Ribbon & Seal
+      const finishRow = document.createElement('div');
+      finishRow.className = 'flex justify-between text-[12px] text-on-surface-variant pt-1';
+      finishRow.innerHTML = `<span>Ribbon: ${state.ribbon} • Seal: ${state.seal}</span><span class="text-primary font-semibold">Complimentary</span>`;
+      manifest.appendChild(finishRow);
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function addToBagAction() {
+    const toast = document.getElementById('cart-toast');
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 3200);
+  }
+
+  // Scroll spy to update step bar
+  window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY + 180;
+    const s1 = document.getElementById('step-vessel').offsetTop;
+    const s2 = document.getElementById('step-gifts').offsetTop;
+    const s3 = document.getElementById('step-confections').offsetTop;
+    const s4 = document.getElementById('step-finishing').offsetTop;
+
+    const fill = document.getElementById('progress-bar-fill');
+
+    if (scrollPos >= s4) {
+      fill.style.width = '100%';
+    } else if (scrollPos >= s3) {
+      fill.style.width = '75%';
+    } else if (scrollPos >= s2) {
+      fill.style.width = '50%';
+    } else {
+      fill.style.width = '25%';
+    }
+  });
+
+  // Initial calculation
+  recalculateTotal();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_-4px_rgba(119,90,25,0.08)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">home</span><span class="font-label-sm text-[10px] tracking-wide">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">auto_awesome_mosaic</span><span class="font-label-sm text-[10px] tracking-wide">Catalog</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 transition-colors group text-primary font-semibold" data-path="custom-builder" href="#"><span class="absolute -top-1 right-2 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="material-symbols-outlined text-[22px] text-primary group-hover:rotate-12 transition-transform">magic_button</span><span class="font-label-sm text-[10px] tracking-wide text-primary font-medium">Builder</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">local_mall</span><span class="font-label-sm text-[10px] tracking-wide">Cart</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="account" href="#"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">person_pin</span><span class="font-label-sm text-[10px] tracking-wide">Account</span></a></div></nav></body></html>

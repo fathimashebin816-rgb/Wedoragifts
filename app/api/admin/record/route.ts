@@ -1,0 +1,3 @@
+import {NextResponse} from 'next/server';import {isAdmin} from '@/lib/admin-auth';import {writeSheet} from '@/lib/sheets';
+const allowed=new Set(['addProduct','updateProduct','deleteProduct','addPurchase','updatePurchase','deletePurchase']);
+export async function POST(req:Request){if(!await isAdmin())return NextResponse.json({error:'Unauthorized'},{status:401});try{const {action,data}=await req.json();if(!allowed.has(action)||!data||typeof data!=='object')return NextResponse.json({error:'Invalid request'},{status:400});await writeSheet(action,data);return NextResponse.json({success:true})}catch(e){return NextResponse.json({error:e instanceof Error?e.message:'Write failed'},{status:502})}}
